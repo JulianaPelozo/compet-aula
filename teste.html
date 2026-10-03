@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/><meta content="mobile_stack" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{width:100vw;margin:0;padding:0;}body{overscroll-behavior:none;}.pb-safe{padding-bottom:env(safe-area-inset-bottom,0px);}.pt-safe{padding-top:env(safe-area-inset-top,0px);}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config = { darkMode: "class", theme: { extend: { colors: { "on-error-container": "#93000a", "surface-container-low": "#fbf2ed", "surface-variant": "#e9e1dc", "on-primary-fixed-variant": "#822801", "secondary-container": "#ffc167", "inverse-primary": "#ffb59c", "secondary": "#825500", "error": "#ba1a1a", "surface-bright": "#fff8f5", "surface-dim": "#e1d8d4", "outline": "#8a726a", "tertiary-fixed-dim": "#aacfba", "on-tertiary-container": "#f5fff7", "on-primary-fixed": "#390c00", "surface-container-high": "#efe6e2", "on-secondary-fixed": "#291800", "surface-container-lowest": "#ffffff", "background": "#fff8f5", "inverse-on-surface": "#f8efea", "primary-fixed": "#ffdbcf", "on-tertiary": "#ffffff", "on-primary-container": "#fffbff", "surface": "#fff8f5", "on-secondary": "#ffffff", "surface-container-highest": "#e9e1dc", "secondary-fixed-dim": "#f9bb62", "on-error": "#ffffff", "on-secondary-container": "#774e00", "on-surface-variant": "#57423b", "primary-container": "#bf542c", "primary-fixed-dim": "#ffb59c", "inverse-surface": "#34302c", "on-surface": "#1e1b18", "outline-variant": "#dec0b7", "on-tertiary-fixed-variant": "#2c4d3d", "tertiary-container": "#5a7c6a", "tertiary": "#416352", "secondary-fixed": "#ffddb3", "surface-tint": "#a23e18", "tertiary-fixed": "#c6ebd5", "primary": "#9f3c16", "on-background": "#1e1b18", "error-container": "#ffdad6", "on-primary": "#ffffff", "on-tertiary-fixed": "#002114", "surface-container": "#f5ece7", "on-secondary-fixed-variant": "#624000" }, borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" }, spacing: { "space-xl": "2.5rem", "gutter-sm": "1rem", "margin-sm": "1rem", "gutter": "1.5rem", "space-sm": "0.5rem", "space-xs": "0.25rem", "space-lg": "1.5rem", "space-md": "1rem", "margin": "2rem" }, fontFamily: { "display-lg": ["Newsreader"], "headline-lg": ["Newsreader"], "body-sm": ["Plus Jakarta Sans"], "title-md": ["Plus Jakarta Sans"], "body-lg": ["Plus Jakarta Sans"], "body-md": ["Plus Jakarta Sans"], "label-lg": ["Plus Jakarta Sans"], "headline-md": ["Newsreader"], "display-lg-mobile": ["Newsreader"], "headline-sm": ["Newsreader"], "label-md": ["Plus Jakarta Sans"], "headline-lg-mobile": ["Newsreader"], "label-sm": ["Plus Jakarta Sans"] }, fontSize: { "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "400" }], "headline-lg": ["32px", { "lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "body-sm": ["12px", { "lineHeight": "18px", "fontWeight": "400" }], "title-md": ["16px", { "lineHeight": "24px", "letterSpacing": "-0.005em", "fontWeight": "600" }], "body-lg": ["16px", { "lineHeight": "26px", "fontWeight": "400" }], "body-md": ["14px", { "lineHeight": "22px", "fontWeight": "400" }], "label-lg": ["14px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "600" }], "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "500" }], "display-lg-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.015em", "fontWeight": "400" }], "headline-sm": ["20px", { "lineHeight": "28px", "fontWeight": "600" }], "label-md": ["12px", { "lineHeight": "16px", "letterSpacing": "0.02em", "fontWeight": "600" }], "headline-lg-mobile": ["26px", { "lineHeight": "34px", "letterSpacing": "-0.01em", "fontWeight": "500" }], "label-sm": ["10px", { "lineHeight": "14px", "letterSpacing": "0.06em", "fontWeight": "700" }] } } } }</script><style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head><body class="bg-surface font-body-md text-on-surface flex flex-col min-h-screen"><header class="fixed top-0 w-full z-50 pt-safe bg-surface/85 backdrop-blur-xl shadow-[0_1px_8px_rgba(45,41,38,0.04)]"><div class="h-16 px-gutter-sm flex items-center justify-between gap-space-sm"><div class="flex items-center gap-space-xs"><button aria-label="Go Back" class="w-11 h-11 flex items-center justify-center text-on-surface hover:text-primary transition-colors" onclick="history.back()"><span class="material-symbols-outlined text-[24px]">arrow_back</span></button><img alt="Acervo Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1VAMLzfuImThKtmGR3EOjGmk_wp136_XuCfQXB9nSerdJ0Ua6tzBk6Sgk5KnkXWwSgNZidUuyKMe3p3eAxzdO5pKwyA2DqAfYkdaYA-5x1Jsqz-qp4rsyiWji_gB96LJAUqpx_DaI6jUQRGvu0Q5lL8s33zwVNemQpYIJN2ucqa9nU-Kkm2JXdv-wM76t_btoL-GGx3H9hsHKCfW6iu9iavufbJYiYVeQMVPtYslUClh7i3sBHOsw54_QA"/><span class="font-headline-sm text-headline-sm text-on-surface tracking-tight hidden sm:inline">Acervo</span></div><div class="flex items-center justify-center"><h1 class="font-title-md text-title-md text-on-surface truncate max-w-[170px]">Item Detail</h1></div><div class="flex items-center gap-space-xs"><button aria-label="Share or Options" class="w-11 h-11 flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors"><span class="material-symbols-outlined text-[22px]">more_vert</span></button><div class="flex items-center justify-center pl-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-surface-variant" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5PsCgMYVKYpOM4hyFIFZWe_4ldrihgwM7cmp0u8CanqxtU6NSgsNTzVfZ1VVFE7rOSm6vpniuI5F0YdCqGi3IbQZ-PdrvbjpoEr-uNSCFiZ9te0gPhmf-Isdo5ZBMqfG16h386aTMlWbwKywzxwT9X057dX1ztb49JImKp_45eAx3EZYohl3KwVDg8U0gsml12AToCWdttPwxzt0K6HONrVoTKP7Wr3fWtAteOkDWeOQyI8yW-Y5PgA"/></div></div></div></header><main class="flex-1 flex flex-col relative w-full pt-16 pb-safe bg-surface px-gutter-sm"><div class="flex flex-col w-full pb-10">
+<!-- Imersão Visual do Item: Gatefold + Vinil saindo -->
+<section class="relative w-full pt-4 pb-6 flex flex-col items-center justify-center overflow-hidden">
+<div class="relative w-72 h-72 sm:w-80 sm:h-80 flex items-center justify-center">
+<!-- Vinil saindo sutilmente para a direita -->
+<div aria-label="Tocar no vinil para inspecionar o selo Odeon" class="absolute right-1 top-4 w-64 h-64 sm:w-72 sm:h-72 rounded-full bg-[#121110] shadow-xl flex items-center justify-center transition-transform duration-700 ease-out cursor-pointer hover:translate-x-6" id="vinyl-disc" onclick="toggleVinylPeek()" style="box-shadow: 0 10px 30px rgba(0,0,0,0.35), inset 0 0 0 2px rgba(255,255,255,0.06), inset 0 0 0 14px #1a1816, inset 0 0 0 28px #131210, inset 0 0 0 44px #1d1b18, inset 0 0 0 60px #131210;">
+<!-- Ranhuras do vinil em espiral decorativa -->
+<div class="absolute inset-4 rounded-full opacity-20 pointer-events-none" style="background: radial-gradient(circle, transparent 40%, rgba(255,255,255,0.15) 45%, transparent 50%, rgba(255,255,255,0.1) 65%, transparent 70%);"></div>
+<!-- Selo Central Odeon Vintage -->
+<div class="w-24 h-24 rounded-full bg-secondary-container text-on-secondary-container shadow-md flex flex-col items-center justify-center p-1 text-center relative select-none">
+<div class="w-20 h-20 rounded-full flex flex-col items-center justify-center">
+<span class="font-headline-sm text-[10px] tracking-widest uppercase font-bold text-on-secondary-container">ODEON</span>
+<span class="material-symbols-outlined text-[14px] text-on-secondary-container my-0.5">album</span>
+<span class="font-label-sm text-[8px] uppercase tracking-tighter opacity-90">SMOFB-3732</span>
+<span class="font-label-sm text-[7px] opacity-75">33⅓ RPM</span>
+</div>
+<!-- Furo central do spindle -->
+<div class="absolute w-3 h-3 rounded-full bg-[#121110] shadow-inner"></div>
+</div>
+</div>
+<!-- Capa do Álbum (Jacket com textura e sombra aconchegante) -->
+<div class="relative z-10 w-64 h-64 sm:w-72 sm:h-72 rounded-lg bg-surface-container-lowest shadow-2xl overflow-hidden flex flex-col">
+<img class="w-full h-full object-cover" data-alt="Artistic vintage photograph of two young Brazilian boys sitting on a red dirt road by the countryside, dusty warm tones, 1970s analogue grain, nostalgic sun-drenched golden hour, Clube da Esquina iconic visual style, muted earth tones and rich amber lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDie0jrWbp7C-o-CaAE4J4goQ2Z1QjpfVeX0R6Rptsj7Ie9WqztvI5_pOa6IEZn7DujYmCGPqtVndtSl1Yi2dG5JuS0Wn3Dw9ZwgGlK7FXTF84wh4_n-AObkz-QOAQMWrZfpYT562yoZvEDrVjbnnICbj1eBkCvO32Joi-XHaDNYUIxW_W2sHISzstgcMMeWUGuryECY3dwX2okXmOiqqV9a99rwfTPrz70c0g2KD0VToBFo-WBsc09Nw"/>
+<!-- Brilho de encarte protetor plástico acetinado -->
+<div class="absolute inset-0 bg-gradient-to-tr from-black/25 via-transparent to-white/10 pointer-events-none"></div>
+</div>
+</div>
+<!-- Selos / Badges Flutuantes de Formato -->
+<div class="flex flex-wrap items-center justify-center gap-2 mt-4 px-2">
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-surface-container-high text-on-surface-variant shadow-sm">
+<span class="material-symbols-outlined text-[15px] text-primary">album</span>
+<span class="font-label-md text-label-md">Vinil Duplo 12" • 33⅓ RPM</span>
+</div>
+<div class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-secondary-container text-on-secondary-container shadow-sm">
+<span class="material-symbols-outlined text-[15px] text-secondary">verified</span>
+<span class="font-label-md text-label-md">Prensagem Original 1972</span>
+</div>
+</div>
+</section>
+<!-- Bloco de Título e Artista -->
+<section class="flex flex-col items-center text-center px-4 mt-2">
+<span class="font-label-md text-label-md uppercase tracking-wider text-primary font-semibold">Objeto sob Custódia</span>
+<h1 class="font-headline-lg-mobile text-headline-lg-mobile text-on-surface mt-1 tracking-tight">Clube da Esquina</h1>
+<p class="font-headline-sm text-headline-sm text-on-surface-variant italic mt-0.5">Milton Nascimento &amp; Lô Borges</p>
+<div class="flex items-center gap-2 mt-2 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-secondary">library_music</span>
+<span class="font-body-sm text-body-sm">EMI-Odeon • Cat. SMOFB 3732 • Brasil</span>
+</div>
+<!-- Barra de Ações Rápidas -->
+<div class="grid grid-cols-4 gap-2 w-full max-w-sm mt-5">
+<button aria-label="Item Favoritado" class="flex flex-col items-center justify-center py-2.5 px-2 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all active:scale-95" id="fav-btn" onclick="toggleFavorite()">
+<span class="material-symbols-outlined text-primary text-[22px]" id="fav-icon" style="font-variation-settings: 'FILL' 1;">favorite</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Gema</span>
+</button>
+<button aria-label="Registrar Audição do Vinil" class="col-span-2 flex items-center justify-center gap-2 py-2.5 px-3 rounded-xl bg-primary text-on-primary shadow-md hover:bg-primary-container transition-all active:scale-95" id="play-log-btn" onclick="logSession()">
+<span class="material-symbols-outlined text-[20px]">play_circle</span>
+<span class="font-label-lg text-label-lg font-bold">Ouvir / Registrar</span>
+</button>
+<button aria-label="Compartilhar Ficha" class="flex flex-col items-center justify-center py-2.5 px-2 rounded-xl bg-surface-container-low hover:bg-surface-container transition-all active:scale-95" onclick="shareCollectorItem()">
+<span class="material-symbols-outlined text-on-surface-variant text-[22px]">ios_share</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant mt-1">Partilhar</span>
+</button>
+</div>
+<!-- Toast de Confirmação Efêmero de Audição -->
+<div class="hidden opacity-0 transition-opacity duration-300 mt-3 px-4 py-1.5 rounded-full bg-tertiary-container text-on-tertiary-container font-body-sm text-body-sm flex items-center gap-1.5 shadow-sm" id="session-toast">
+<span class="material-symbols-outlined text-[16px]">done_all</span>
+<span>Audição nº 47 adicionada ao seu diário!</span>
+</div>
+</section>
+<!-- Metadados Essenciais de Colecionador (Grid 2x2 com Estética de Cartão de Arquivo) -->
+<section class="mt-8 px-2 flex flex-col gap-3">
+<div class="flex items-center justify-between px-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">grading</span>
+        Avaliação &amp; Localização
+      </h2>
+<span class="font-label-sm text-label-sm uppercase tracking-wider text-outline">Padrão Goldmine</span>
+</div>
+<div class="grid grid-cols-2 gap-3">
+<!-- Card 1: Estado da Mídia -->
+<div class="p-3.5 rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wide text-on-surface-variant">Mídia (Disco)</span>
+<span class="inline-block px-1.5 py-0.5 rounded font-label-sm text-label-sm bg-tertiary-container text-on-tertiary-container font-bold">NM</span>
+</div>
+<p class="font-title-md text-title-md text-on-surface font-semibold">Near Mint</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">Brilho espelhado íntegro, sem estalidos ou saltos.</p>
+</div>
+<!-- Card 2: Estado da Capa -->
+<div class="p-3.5 rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wide text-on-surface-variant">Capa Gatefold</span>
+<span class="inline-block px-1.5 py-0.5 rounded font-label-sm text-label-sm bg-secondary-container text-on-secondary-container font-bold">VG+</span>
+</div>
+<p class="font-title-md text-title-md text-on-surface font-semibold">Very Good Plus</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">Desgaste suave do tempo nas lombadas e bordas.</p>
+</div>
+<!-- Card 3: Localização Física -->
+<div class="p-3.5 rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="flex items-center gap-1.5 mb-1.5 text-on-surface-variant">
+<span class="material-symbols-outlined text-[16px] text-primary">shelves</span>
+<span class="font-label-sm text-label-sm uppercase tracking-wide">Endereço Físico</span>
+</div>
+<p class="font-title-md text-title-md text-on-surface font-semibold">Sala de Música</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">Estante Mogno • Prateleira 2 • Nicho B</p>
+</div>
+<!-- Card 4: Valor Patrimonial -->
+<div class="p-3.5 rounded-xl bg-surface-container-low shadow-sm flex flex-col justify-between">
+<div class="flex items-center justify-between mb-1.5">
+<span class="font-label-sm text-label-sm uppercase tracking-wide text-on-surface-variant">Valor Estimado</span>
+<span class="material-symbols-outlined text-[15px] text-tertiary">trending_up</span>
+</div>
+<p class="font-title-md text-title-md text-on-surface font-semibold text-primary">R$ 750,00</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1 leading-snug">Pago R$ 220 em 2019 (+240%)</p>
+</div>
+</div>
+</section>
+<!-- Faixas & Lados (Tracklist Interativa) -->
+<section class="mt-8 px-2">
+<div class="flex items-center justify-between px-2 mb-3">
+<h2 class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">queue_music</span>
+        Prensagem &amp; Repertório
+      </h2>
+<div class="flex bg-surface-container-high rounded-lg p-0.5" role="tablist">
+<button class="px-3 py-1 rounded font-label-md text-label-md bg-surface-container-lowest text-on-surface shadow-sm font-semibold transition-all" id="btn-side-a" onclick="switchSide('A')">Lado A</button>
+<button class="px-3 py-1 rounded font-label-md text-label-md text-on-surface-variant transition-all hover:text-on-surface" id="btn-side-b" onclick="switchSide('B')">Lado B</button>
+</div>
+</div>
+<!-- Lista Lado A -->
+<div class="flex flex-col rounded-xl overflow-hidden shadow-sm bg-surface-container-lowest" id="side-a-tracks">
+<div class="flex items-center justify-between px-4 py-3 bg-surface-container-low">
+<span class="font-label-md text-label-md font-bold text-on-surface">Disco 1 • Lado A (20:30)</span>
+<span class="font-label-sm text-label-sm text-outline">Matriz: 31C 064 422891</span>
+</div>
+<div class="flex items-center justify-between px-4 py-3 hover:bg-surface-container-high/40 transition-colors">
+<div class="flex items-center gap-3 min-w-0">
+<span class="font-label-md text-label-md text-outline w-4 text-right">1</span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">Tudo Que Você Podia Ser</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Lô Borges, Márcio Borges</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-outline ml-2">2:56</span>
+</div>
+<div class="flex items-center justify-between px-4 py-3 bg-surface-container-low/40 hover:bg-surface-container-high/40 transition-colors">
+<div class="flex items-center gap-3 min-w-0">
+<span class="font-label-md text-label-md text-outline w-4 text-right">2</span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">Cais</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Milton Nascimento, Ronaldo Bastos</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-outline ml-2">2:45</span>
+</div>
+<div class="flex items-center justify-between px-4 py-3 hover:bg-surface-container-high/40 transition-colors">
+<div class="flex items-center gap-3 min-w-0">
+<span class="font-label-md text-label-md text-outline w-4 text-right">3</span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">O Trem Azul</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Lô Borges, Ronaldo Bastos</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-outline ml-2">4:05</span>
+</div>
+<div class="flex items-center justify-between px-4 py-3 bg-surface-container-low/40 hover:bg-surface-container-high/40 transition-colors">
+<div class="flex items-center gap-3 min-w-0">
+<span class="font-label-md text-label-md text-outline w-4 text-right">4</span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">Saídas e Bandeiras Nº 1</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Milton Nascimento, Fernando Brant</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-outline ml-2">0:45</span>
+</div>
+<div class="flex items-center justify-between px-4 py-3 hover:bg-surface-container-high/40 transition-colors">
+<div class="flex items-center gap-3 min-w-0">
+<span class="font-label-md text-label-md text-outline w-4 text-right">5</span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">Nuvem Cigana</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Lô Borges, Ronaldo Bastos</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-outline ml-2">2:59</span>
+</div>
+</div>
+<!-- Lista Lado B (Inicia oculto) -->
+<div class="hidden flex-col rounded-xl overflow-hidden shadow-sm bg-surface-container-lowest" id="side-b-tracks">
+<div class="flex items-center justify-between px-4 py-3 bg-surface-container-low">
+<span class="font-label-md text-label-md font-bold text-on-surface">Disco 1 • Lado B (21:10)</span>
+<span class="font-label-sm text-label-sm text-outline">Matriz: 31C 064 422892</span>
+</div>
+<div class="flex items-center justify-between px-4 py-3 hover:bg-surface-container-high/40 transition-colors">
+<div class="flex items-center gap-3 min-w-0">
+<span class="font-label-md text-label-md text-outline w-4 text-right">1</span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">Cravo e Canela</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Milton Nascimento, Ronaldo Bastos</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-outline ml-2">2:31</span>
+</div>
+<div class="flex items-center justify-between px-4 py-3 bg-surface-container-low/40 hover:bg-surface-container-high/40 transition-colors">
+<div class="flex items-center gap-3 min-w-0">
+<span class="font-label-md text-label-md text-outline w-4 text-right">2</span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">Um Girassol da Cor de Seu Cabelo</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Lô Borges, Márcio Borges</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-outline ml-2">4:12</span>
+</div>
+<div class="flex items-center justify-between px-4 py-3 hover:bg-surface-container-high/40 transition-colors">
+<div class="flex items-center gap-3 min-w-0">
+<span class="font-label-md text-label-md text-outline w-4 text-right">3</span>
+<div class="flex flex-col min-w-0">
+<span class="font-title-md text-title-md text-on-surface truncate">San Vicente</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Milton Nascimento, Fernando Brant</span>
+</div>
+</div>
+<span class="font-label-md text-label-md text-outline ml-2">2:46</span>
+</div>
+</div>
+</section>
+<!-- Notas & Memória Pessoal do Colecionador -->
+<section class="mt-8 px-2">
+<div class="p-4 rounded-xl bg-surface-container-low shadow-sm relative overflow-hidden">
+<div class="flex items-center justify-between mb-2">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary text-[20px]">history_edu</span>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Diário de Proveniência</h2>
+</div>
+<span class="inline-flex items-center gap-1 font-label-sm text-label-sm text-secondary bg-secondary-container/50 px-2 py-0.5 rounded-full">
+<span class="material-symbols-outlined text-[13px]">draw</span>
+          Autografado
+        </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant italic leading-relaxed">
+        “Exemplar com autógrafo discreto no encarte interno de Lô Borges, obtido após a apresentação no Palácio das Artes em Belo Horizonte (2018). Prensagem com grave quente e encorpado típico da matriz original de acetato da Odeon.”
+      </p>
+<div class="mt-3 pt-3 flex items-center justify-between text-outline font-label-sm text-label-sm">
+<span>Última higienização: 14 de Out, 2024</span>
+<span>Capa plástica 0.20mm micras</span>
+</div>
+</div>
+</section>
+<!-- Status de Posse e Empréstimo -->
+<section class="mt-8 px-2 flex flex-col gap-3">
+<!-- Card de Status Atual -->
+<div class="p-4 rounded-xl bg-surface-container-high/60 shadow-sm flex items-center justify-between">
+<div class="flex items-center gap-3">
+<div class="w-10 h-10 rounded-full bg-tertiary-container text-on-tertiary-container flex items-center justify-center">
+<span class="material-symbols-outlined text-[22px]">inventory_2</span>
+</div>
+<div class="flex flex-col">
+<span class="font-title-md text-title-md text-on-surface font-semibold">Na sua estante</span>
+<span class="font-body-sm text-body-sm text-tertiary font-medium">Disponível no acervo particular</span>
+</div>
+</div>
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary animate-pulse"></span>
+</div>
+<!-- Botões de Ações de Gestão -->
+<div class="flex flex-col sm:flex-row gap-2.5 mt-1">
+<button class="flex-1 py-3 px-4 rounded-xl bg-surface-container-lowest text-on-surface shadow-sm hover:bg-surface-container transition-all flex items-center justify-center gap-2" onclick="openLoanModal()">
+<span class="material-symbols-outlined text-secondary text-[20px]">person_add</span>
+<span class="font-label-lg text-label-lg">Registrar Empréstimo</span>
+</button>
+<button class="flex-1 py-3 px-4 rounded-xl bg-surface-container-lowest text-on-surface shadow-sm hover:bg-surface-container transition-all flex items-center justify-center gap-2" onclick="openEditDetails()">
+<span class="material-symbols-outlined text-outline text-[20px]">tune</span>
+<span class="font-label-lg text-label-lg">Editar Detalhes Técnicos</span>
+</button>
+</div>
+</section>
+</div>
+<script>
+  let isVinylExtended = false;
+  function toggleVinylPeek() {
+    const disc = document.getElementById('vinyl-disc');
+    if (!disc) return;
+    isVinylExtended = !isVinylExtended;
+    if (isVinylExtended) {
+      disc.style.transform = 'translateX(45px) rotate(35deg)';
+    } else {
+      disc.style.transform = 'translateX(0px) rotate(0deg)';
+    }
+  }
+
+  let isFav = true;
+  function toggleFavorite() {
+    const icon = document.getElementById('fav-icon');
+    if (!icon) return;
+    isFav = !isFav;
+    if (isFav) {
+      icon.style.fontVariationSettings = "'FILL' 1";
+      icon.className = "material-symbols-outlined text-primary text-[22px]";
+    } else {
+      icon.style.fontVariationSettings = "'FILL' 0";
+      icon.className = "material-symbols-outlined text-outline text-[22px]";
+    }
+  }
+
+  function logSession() {
+    const toast = document.getElementById('session-toast');
+    if (!toast) return;
+    toast.classList.remove('hidden');
+    setTimeout(() => {
+      toast.classList.remove('opacity-0');
+      toast.classList.add('opacity-100');
+    }, 20);
+
+    setTimeout(() => {
+      toast.classList.remove('opacity-100');
+      toast.classList.add('opacity-0');
+      setTimeout(() => toast.classList.add('hidden'), 300);
+    }, 2800);
+  }
+
+  function switchSide(side) {
+    const sideA = document.getElementById('side-a-tracks');
+    const sideB = document.getElementById('side-b-tracks');
+    const btnA = document.getElementById('btn-side-a');
+    const btnB = document.getElementById('btn-side-b');
+
+    if (side === 'A') {
+      sideA.classList.remove('hidden');
+      sideA.classList.add('flex');
+      sideB.classList.add('hidden');
+      sideB.classList.remove('flex');
+
+      btnA.className = "px-3 py-1 rounded font-label-md text-label-md bg-surface-container-lowest text-on-surface shadow-sm font-semibold transition-all";
+      btnB.className = "px-3 py-1 rounded font-label-md text-label-md text-on-surface-variant transition-all hover:text-on-surface";
+    } else {
+      sideB.classList.remove('hidden');
+      sideB.classList.add('flex');
+      sideA.classList.add('hidden');
+      sideA.classList.remove('flex');
+
+      btnB.className = "px-3 py-1 rounded font-label-md text-label-md bg-surface-container-lowest text-on-surface shadow-sm font-semibold transition-all";
+      btnA.className = "px-3 py-1 rounded font-label-md text-label-md text-on-surface-variant transition-all hover:text-on-surface";
+    }
+  }
+
+  function shareCollectorItem() {
+    if (navigator.share) {
+      navigator.share({
+        title: 'Clube da Esquina (1972) • Acervo',
+        text: 'Confira a ficha do exemplar raro de Clube da Esquina no meu acervo analógico.',
+        url: window.location.href,
+      }).catch(() => {});
+    } else {
+      alert('Link do item copiado para compartilhar com outros colecionadores!');
+    }
+  }
+
+  function openLoanModal() {
+    alert('Abertura da folha de empréstimo: Escolha um amigo e a data limite de devolução.');
+  }
+
+  function openEditDetails() {
+    alert('Editor técnico: Ajustar matriz, selo, avaliações Goldmine e fotografias dos encartes.');
+  }
+</script></main></body></html>
